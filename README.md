@@ -14,7 +14,7 @@ Just import the library to generate the Italian fiscal code from the data of a p
 ```go
 import "github.com/whitone/ifc"
 
-cf, err := ifc.Encode("Doe", "John", 'M', "1999-12-13", "Malta")
+code, err := ifc.Encode("Doe", "John", 'M', "1999-12-13", "Malta")
 if err != nil {
   log.Fatal(err)
 }
@@ -39,7 +39,7 @@ person.Name = "Jane"
 person.Sex = 'F'
 person.BirthDate = time.Now().AddDate(-30, 0, 0).Format("2006-01-02")
 person.BirthPlace = "Palermo"
-cf, err := person.Ifc()
+code, err := person.Ifc()
 if err != nil {
   log.Fatal(err)
 }

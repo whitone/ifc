@@ -24,7 +24,7 @@ import (
 )
 
 const (
-	genFileName      = "municipalities.go"
+	genFileName = "municipalities.go"
 
 	municipalURL     = "https://www.istat.it/storage/codici-unita-amministrative/Elenco-comuni-italiani.csv"
 	municipalCodeCol = 18
