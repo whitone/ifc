@@ -5,5 +5,5 @@ sudo: false
 go:
   - 1.x
 
-before_script:
+before_install:
   - go generate
