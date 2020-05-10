@@ -1,11 +1,12 @@
-[![godoc reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/whitone/ifc)
-[![build status](https://api.travis-ci.com/whitone/ifc.svg?branch=master)](https://travis-ci.com/github/whitone/ifc)
-[![go report card](https://goreportcard.com/badge/github.com/whitone/ifc)](https://goreportcard.com/report/github.com/whitone/ifc)
-[![license](https://img.shields.io/github/license/whitone/ifc.svg)](./LICENSE)
+[![godoc reference][godoc badge]][godoc url]
+[![build status][travis badge]][travis url]
+[![go report card][goreportcard badge]][goreportcard url]
+[![total alerts][lgtm badge]][lgtm url]
+[![license][license badge]][license url]
 
 # ifc
 
-> The `ifc` package allows to handle [Italian fiscal code].
+> The `ifc` package allows to handle [Italian fiscal code][ifc wikipedia].
 
 ## Example
 
@@ -59,11 +60,21 @@ log.Println("sex: %c, birthdate: %s, birthplace: %s", person.Sex, person.BirthDa
 
 ## Useful references
 
-- [Italian fiscal code reference documentation][IFC refdoc]
+- [Italian fiscal code reference documentation][ifc refdoc]
 
 ## License
 
-`ifc` is licensed under the [BSD-3-Clause License](./LICENSE).
+`ifc` is licensed under the [BSD-3-Clause License][license url].
 
-[Italian fiscal code]: https://en.wikipedia.org/wiki/Italian_fiscal_code
-[IFC refdoc]: https://www.agenziaentrate.gov.it/portale/Schede/Istanze/Richiesta+TS_CF/Informazioni+codificazione+pf/
+[godoc badge]: https://img.shields.io/badge/godoc-reference-5272B4
+[godoc url]: https://pkg.go.dev/github.com/whitone/ifc
+[travis badge]: https://api.travis-ci.com/whitone/ifc.svg?branch=master
+[travis url]: https://travis-ci.com/github/whitone/ifc
+[goreportcard badge]: https://goreportcard.com/badge/github.com/whitone/ifc
+[goreportcard url]: https://goreportcard.com/report/github.com/whitone/ifc
+[lgtm badge]: https://img.shields.io/lgtm/alerts/g/whitone/ifc.svg
+[lgtm url]: https://lgtm.com/projects/g/whitone/ifc/alerts
+[license badge]: https://img.shields.io/github/license/whitone/ifc.svg
+[license url]: ./LICENSE
+[ifc wikipedia]: https://en.wikipedia.org/wiki/Italian_fiscal_code
+[ifc refdoc]: https://www.agenziaentrate.gov.it/portale/Schede/Istanze/Richiesta+TS_CF/Informazioni+codificazione+pf/

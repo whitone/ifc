@@ -116,7 +116,7 @@ func Decode(code string) (p *Person, err error) {
 		p.BirthPlace = val
 	}
 	if p.BirthPlace == "" {
-		err = errors.New(errPlaceCode + " '" + birthPlaceCode + "'")
+		return nil, errors.New(errPlaceCode + " '" + birthPlaceCode + "'")
 	}
 	cinCheck, err := encodeCin(cleanCode[:len(cleanCode)-1])
 	if err != nil {
